@@ -8,7 +8,7 @@ describe NamerClient, pact: true do
 
   describe 'name' do
     before do
-      namer_service.given(
+      namer.given(
         'everything is fine'
       ).upon_receiving(
         'a request for a name'
