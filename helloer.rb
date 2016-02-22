@@ -1,10 +1,6 @@
 require 'sinatra'
-require 'rest-client'
+require_relative 'namer_client'
 
 get '/' do
-  "Hello #{name}!"
-end
-
-def name
-  RestClient.get(ENV['NAME_PROVIDER_URL'])
+  "Hello #{NamerClient.name}!"
 end

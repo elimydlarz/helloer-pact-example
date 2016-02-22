@@ -1,0 +1,27 @@
+{
+  "consumer": {
+    "name": "Helloer"
+  },
+  "provider": {
+    "name": "Namer"
+  },
+  "interactions": [
+    {
+      "description": "a request for a name",
+      "provider_state": "everything is fine",
+      "request": {
+        "method": "get",
+        "path": ""
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+        },
+        "body": "world"
+      }
+    }
+  ],
+  "metadata": {
+    "pactSpecificationVersion": "1.0.0"
+  }
+}
