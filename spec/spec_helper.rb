@@ -2,7 +2,8 @@ require 'rack/test'
 require 'rspec'
 require 'rspec/its'
 require 'byebug'
-require_relative '../meetcaster'
+require 'rest-client'
+require_relative '../helloer'
 
 ENV['RACK_ENV'] = 'test'
 
