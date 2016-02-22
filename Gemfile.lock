@@ -48,6 +48,7 @@ GEM
       rack
     rack-test (0.6.3)
       rack (>= 1.0)
+    rake (10.4.2)
     randexp (0.1.7)
     rest-client (1.8.0)
       http-cookie (>= 1.0.2, < 2.0)
@@ -90,6 +91,7 @@ DEPENDENCIES
   byebug
   pact
   rack-test
+  rake
   rest-client
   rspec
   rspec-its
