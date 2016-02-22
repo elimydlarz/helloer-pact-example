@@ -1,0 +1,6 @@
+# IntelliJ nonsense
+.idea
+*.iml
+
+# OSX nonsense
+.DS_Store
