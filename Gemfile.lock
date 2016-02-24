@@ -9,8 +9,12 @@ GEM
     find_a_port (1.0.1)
     http-cookie (1.0.2)
       domain_name (~> 0.5)
+    httparty (0.13.7)
+      json (~> 1.8)
+      multi_xml (>= 0.5.2)
     json (1.8.3)
     mime-types (2.99)
+    multi_xml (0.5.5)
     netrc (0.11.0)
     pact (1.9.0)
       awesome_print (~> 1.1)
@@ -43,6 +47,10 @@ GEM
       rspec (>= 2.14)
       term-ansicolor (~> 1.0)
       thor
+    pact_broker-client (1.0.0)
+      httparty
+      json
+      pact
     rack (1.6.4)
     rack-protection (1.5.3)
       rack
@@ -90,6 +98,7 @@ PLATFORMS
 DEPENDENCIES
   byebug
   pact
+  pact_broker-client
   rack-test
   rake
   rest-client
