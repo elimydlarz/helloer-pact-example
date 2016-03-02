@@ -2,6 +2,6 @@ require 'rest-client'
 
 class NamerClient
   def self.name
-    RestClient.get(ENV['NAME_PROVIDER_URL'])
+    RestClient.get 'http://localhost:4567'
   end
 end

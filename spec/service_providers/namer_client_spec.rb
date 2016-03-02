@@ -4,8 +4,6 @@ require_relative '../../namer_client'
 describe NamerClient, pact: true do
   subject { NamerClient }
 
-  before { ENV['NAME_PROVIDER_URL'] = 'localhost:1234' }
-
   describe 'name' do
     before do
       namer.given(
