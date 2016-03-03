@@ -1,8 +1,8 @@
 require 'dotenv'
-Dotenv.load
-
 require 'sinatra'
-require_relative 'namer_client'
+require './namer_client'
+
+Dotenv.load
 
 set :port, 3456
 
