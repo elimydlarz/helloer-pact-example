@@ -1,6 +1,5 @@
 require 'rack/test'
 require 'rspec'
-require 'rspec/its'
 require 'byebug'
 require 'rest-client'
 require_relative '../helloer'

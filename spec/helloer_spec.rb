@@ -2,11 +2,15 @@ require 'spec_helper'
 
 describe 'Helloer'  do
   describe 'landing page' do
-    subject { get '/' }
+    before do
+      response_from_namer = { name: 'world' }.to_json
+      allow(RestClient).to receive(:get).with(ENV.fetch('NAMER_URL')).and_return(response_from_namer)
 
-    before { allow(RestClient).to receive(:get).with(ENV.fetch 'NAMER_URL').and_return('world') }
+      get '/'
+    end
 
-    its(:status) { is_expected.to eq 200 }
-    its(:body) { is_expected.to eq 'Hello world!' }
+    it 'says hello' do
+      expect(last_response.body).to eq 'Hello world!'
+    end
   end
 end

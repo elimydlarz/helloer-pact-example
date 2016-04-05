@@ -15,7 +15,9 @@ describe NamerClient, pact: true do
         path: '/'
       ).will_respond_with(
         status: 200,
-        body: 'world'
+        body: {
+          name: 'world'
+        }
       )
     end
 
