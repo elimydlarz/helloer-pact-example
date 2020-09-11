@@ -6,19 +6,11 @@ describe NamerClient, pact: true do
 
   describe 'name' do
     before do
-      namer.given(
-        'everything is fine'
-      ).upon_receiving(
-        'a request for a name'
-      ).with(
-        method: :get,
-        path: '/'
-      ).will_respond_with(
-        status: 200,
-        body: {
-          name: 'world'
-        }
-      )
+      namer
+          .given('everything is fine')
+          .upon_receiving('a request for a name')
+          .with(method: :get, path: '/')
+          .will_respond_with(status: 200, body: { name: 'world' })
     end
 
     it 'returns world' do
