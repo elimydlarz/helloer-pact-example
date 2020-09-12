@@ -8,10 +8,10 @@
   "interactions": [
     {
       "description": "a request for a name",
-      "provider_state": "everything is fine",
+      "providerState": "everything is fine",
       "request": {
         "method": "get",
-        "path": ""
+        "path": "/"
       },
       "response": {
         "status": 200,
@@ -24,6 +24,8 @@
     }
   ],
   "metadata": {
-    "pactSpecificationVersion": "1.0.0"
+    "pactSpecification": {
+      "version": "2.0.0"
+    }
   }
 }
